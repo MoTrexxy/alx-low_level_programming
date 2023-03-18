@@ -1,20 +1,25 @@
 #include <stdio.h>
+
 /**
-* main - Entry point
-* Description: 'print alphabets lowercase'
-* Return: Always 0
+* main - Prints the alphabet in lowercase, and then in uppercase
+* Author: Motunrayo Odeyemi
+* Return: 0
 */
 int main(void)
 {
-	int n = 97;
+	char letter;
 
-	while (n <= 122)
-	{
-		putchar(n);
-		n++;
-	}
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
+
 	putchar('\n');
+
 	return (0);
+}
+
 
 
 
