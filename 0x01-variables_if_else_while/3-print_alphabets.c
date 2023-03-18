@@ -2,7 +2,7 @@
 
 /**
 * main - Prints the alphabet in lowercase, and then in uppercase
-* Author: Motunrayo Odeyemi
+* Author: Odeyemi Motunrayo
 * Return: 0
 */
 int main(void)
