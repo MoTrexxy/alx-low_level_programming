@@ -1,14 +1,21 @@
 #include <stdio.h>
 /**
-* main - Entry point
-* Description: 'Print alphabets lowercase'
-* Return: Always 0
+* main - prints tha alphabet in lowercase
+* Author: Odeyemi Motunrayo
+* Return: 0
 */
 int main(void)
 {
-	putchar(65);
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
 	return (0);
 }
+
 
 
 
