@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints all possible combination of single-digit numbers.
- * Author: Richard Amoo
+ * Author: Odeyemi Motunrayo
  * Return: 0
 */
 int main(void)
