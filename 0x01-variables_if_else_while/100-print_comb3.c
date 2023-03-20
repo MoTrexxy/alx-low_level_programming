@@ -7,22 +7,22 @@
 * Return: 0
 */
 int main(void)
-{int num2 = 0;
+{int num1 = 0;
 int num2;
-while (num2 < 9)
-{num2 = num2 + 1;
+while (num1 < 9)
+{num2 = num1 + 1;
 while (num2 < 10)
-{putchar('0' + num2);
+{putchar('0' + num1);
 putchar('0' + num2);
-if (num2 == 8)
+if (num1 == 8)
 {putchar('\n');
 break;
 }
 putchar(',');
-putchar(',');
+putchar(' ');
 num2++;
 }
-num2++;
+num1++;
 }
 return (0);
 }
