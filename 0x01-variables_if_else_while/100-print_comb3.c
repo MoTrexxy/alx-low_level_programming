@@ -7,7 +7,7 @@
 * Return: 0
 */
 int main(void)
-{int inum1 = 0;
+{int num1 = 0;
 int num2;
 while (num1 < 9)
 {num2 = num1 + 1;
@@ -19,7 +19,7 @@ if (num1 == 8)
 break;
 }
 putchar(',');
-putchar(' ');
+putchar(',');
 num2++;
 }
 num1++;
