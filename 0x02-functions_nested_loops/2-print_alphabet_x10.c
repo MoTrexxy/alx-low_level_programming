@@ -3,21 +3,20 @@
 /**
 * print_alphabet_x10 - Check Main
 * Description: function uses _putchar function to print
-* alphabet in lowercase 10 times 
-* Return: always 0
+* alphabet in lowercase 10 times
+* Return: Nothing.
 */
 
 void print_alphabet_x10(void)
 {
-	int i;
-	char j;
+	char i;
+	int j;
 
-	for (i = 0; i < 10; i++)
+	for (j = 0; j < 10; j++)
 	{
-		for (j = 'a'; j <= 'z';	j++)
-		{
-			_putchar(j);
-		}
+		for (i = 'a'; i <= 'z'; i++)
+			_putchar(i);
 		_putchar('\n');
 	}
 }
+
