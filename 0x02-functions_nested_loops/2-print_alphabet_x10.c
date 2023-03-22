@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* main - alphabet
-* print_alphabet_x10 -function that prints 10x alphabets
-*
+* print_alphabet_x10 - Check Main
+* Description: function uses _putchar function to print
+* alphabet in lowercase 10 times 
 * Return: always 0
 */
 
