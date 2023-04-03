@@ -8,7 +8,7 @@
 * Return: returns a pointer to destination
 */
 
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *mdest = dest;
 	char *msrc = src;
