@@ -7,19 +7,23 @@
 */
 int factorial(int n)
 {
+	int fctl;
+
 	if (n < 0)
 	{
 	return (-1);
 	}
-	if (n == 0)
+	else if (n == 0)
 	{
 	return (1);
 	}
-	int fctl = 1;
-
-	for (int m = 1; m <= n; m++)
+	else
+	{
+	int m;
+	for (m = n; m > 0; m--)
 	{
 	fctl *= m;
 	}
 	return (fctl);
-}
+	}
+}	
