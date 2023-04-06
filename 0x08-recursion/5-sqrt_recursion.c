@@ -2,18 +2,27 @@
 
 /**
 * _sqrt_recursion - function
-*  @n: integer
-*  Return: the natural square root of a number
+* @n: integer
+* Return: the natural square root of a number
 */
 int _sqrt_recursion(int n)
 {
+	return (_sqrt(n, 1));
+}
+
+/**
+* _sqrt - _sqrt_recursion
+* @n: integer
+* @m: integer
+* Return: square root
+*/
+int _sqrt(int n, int m)
+{
 	if (n < 0)
 		return (-1);
-	if (n == 1)
-		return (n);
-	int root = _sqrt_recursion(n / 4) * 2;
-
-	if ((root + 1) * (root + 1) < +n)
-		return (root + 1);
-	return (root);
+	if ((m * m) > n)
+		return (-1);
+	if (m * m == n)
+		return (m);
+	return (_sqrt(n, m + 1));
 }
