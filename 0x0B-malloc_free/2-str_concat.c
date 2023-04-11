@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 
 	maxcount = n;
 	for (n = 0; n <= maxcount; o++, n++)
-		copiedstr[o] = s2[j];
+		copiedstr[o] = s2[n];
 
 	return (copiedstr);
 }
