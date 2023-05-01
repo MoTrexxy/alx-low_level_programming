@@ -4,36 +4,36 @@
 /**
  * count_word - main funct
  * @s: string s
- * Return: words nos
+ * Return: words no
  */
 int count_word(char *s)
 {
-	int flag, m, n;
+	int flag, c, w;
 
 	flag = 0;
-	n = 0;
+	w = 0;
 
-	for (m = 0; s[m] != '\0'; m++)
+	for (c = 0; s[c] != '\0'; c++)
 	{
-		if (s[m] == ' ')
+		if (s[c] == ' ')
 			flag = 0;
 		else if (flag == 0)
 		{
 			flag = 1;
-			n++;
+			w++;
 		}
 	}
 
-	return (n);
+	return (w);
 }
 /**
- * **strtow - other funct
+ * **strtow - second funct
  * @str: string s
  * Return: null
  */
 char **strtow(char *str)
 {
-	char **matrix, *temp;
+	char **matrix, *tmp;
 	int i, k = 0, len = 0, words, c = 0, start, end;
 
 	while (*(str + len))
@@ -53,12 +53,12 @@ char **strtow(char *str)
 			if (c)
 			{
 				end = i;
-				temp = (char *) malloc(sizeof(char) * (c + 1));
-				if (temp == NULL)
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
+				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
-					*temp++ = str[start++];
-				*temp = '\0';
+					*tmp++ = str[start++];
+				*tmp = '\0';
 				matrix[k] = tmp - c;
 				k++;
 				c = 0;
