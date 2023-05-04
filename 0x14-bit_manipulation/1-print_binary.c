@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 	int m, num = 0;
 	unsigned long int index;
 
-	for (m = 98; m >= 0; m--)
+	for (m = 63; m >= 0; m--)
 	{
 		index = n >> m;
 
