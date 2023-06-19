@@ -17,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 
 		while (*n)
 		{
-			if (*m == *n)
+			if (m == n)
 				{
 					return (m);
 				}
@@ -25,5 +25,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		m++;
 	}
-	return NULL;
+	return (NULL);
 }
